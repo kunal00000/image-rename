@@ -1,6 +1,7 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 const {
   showRenameConfirmation,
   fileToGenerativePart,
@@ -25,9 +26,7 @@ document.getElementById('renameButton').addEventListener('click', async () => {
 });
 
 async function renameImages(files) {
-  const genAI = new GoogleGenerativeAI(
-    'AIzaSyCIHmEtu35pAL3rIAxThtUPUeHQEofgJP8'
-  );
+  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
   const model = genAI.getGenerativeModel({ model: 'gemini-pro-vision' });
 
