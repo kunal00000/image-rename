@@ -50,3 +50,9 @@ function handleFileSelect(event) {
     reader.readAsDataURL(file);
   }
 }
+
+module.exports = {
+  showRenameConfirmation,
+  fileToGenerativePart,
+  handleFileSelect,
+};
