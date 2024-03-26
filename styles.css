@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #d9edbf;
   margin: 0;
   padding: 0;
 }
@@ -35,19 +35,19 @@ button {
   font-weight: 500;
 }
 
-.custom-file-upload {
+#imageInput {
   cursor: pointer;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #f6fff6;
+  color: #45a049;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
   display: inline-block;
 }
 
-.custom-file-upload:hover {
-  background-color: #45a049;
+#imageInput:hover {
+  background-color: #ecffd3;
 }
 
 #imagePreview {
@@ -93,8 +93,8 @@ button {
 }
 
 .loader {
-  border: 5px solid #f3f3f3; /* Light grey */
-  border-top: 5px solid #3498db; /* Blue */
+  border: 5px solid #ffffff;
+  border-top: 5px solid #ff9800;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -167,4 +167,35 @@ button {
   padding: 10px;
   font-weight: 600;
   font-size: larger;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #90d26d;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 17px;
+}
+
+.logo-container h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #2c7865;
+}
+
+/* Responsive CSS for larger screens */
+@media only screen and (min-width: 769px) {
+  .logo-container img {
+    margin-right: 10px; /* Adjust spacing between logo and title */
+  }
 }
