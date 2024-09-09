@@ -13,5 +13,4 @@ Screenshot Renamer is a macOS application that automatically renames your screen
 - **Gemini Vision Model**: For image content identification and processing.
 - **@google/generative-ai**: For generating descriptive and accurate filenames based on the content.
 
-
 https://github.com/user-attachments/assets/3b3e1bfb-fa8c-4d4a-a708-4573da151143
